@@ -4,7 +4,6 @@ import ResumeCard from "@/components/ResumeCard";
 import { useEffect, useState } from "react";
 import { usePuterStore } from "lib/puter";
 import { Link, useNavigate } from "react-router";
-import { Button } from "@/components/ui/button";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -38,6 +37,8 @@ export default function Home() {
       setResumes(parsedResumes || []);
       setLoadingResumes(false);
     }
+
+    loadResumes()
   }, [])
 
   return (
