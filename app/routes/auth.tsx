@@ -5,17 +5,16 @@ import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
 import {
     Card,
-    CardAction,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
 import { DoorOpenIcon, UserIcon } from "lucide-react";
+import Logo from "@/components/Logo";
 
 export const meta = () => ([
-    { title: 'Resumind | Auth' },
+    { title: 'AIResume | Auth' },
     { name: 'description', content: 'Log into your account' },
 ])
 
@@ -33,7 +32,9 @@ const Auth = () => {
         <main className="h-screen w-screen relative !pt-0">
             <Card className="w-full max-w-sm absolute top-1/2 left-1/2 -translate-1/2 z-10 bg-background">
                 <CardHeader className=" justify-center">
-                    <CardTitle><img src="logo-light.svg" alt="AI Resume analyser" className="w-auto h-8 mb-4" /></CardTitle>
+                    <CardTitle>
+                        <Logo className="mb-4"/>
+                    </CardTitle>
                     <CardDescription className="text-center">
                         Log In to Continue Your Job Journey
                     </CardDescription>
