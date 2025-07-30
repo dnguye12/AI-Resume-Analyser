@@ -8,7 +8,7 @@ import Navbar from "@/components/Navbar";
 import { Skeleton } from "@/components/ui/skeleton";
 
 export const meta = () => ([
-    { title: 'Resumind | Review ' },
+    { title: 'AIResume | Review ' },
     { name: 'description', content: 'Detailed overview of your resume' },
 ])
 
